@@ -10,6 +10,9 @@
 /* Reset */
 
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
+:root {
+	--primary: #0c92cb;
+}
 
 html,
 body,
@@ -3418,10 +3421,19 @@ body.landing #main {
 /* CTA */
 
 #cta {
-	background: #e89980;
-	color: #f9e6df;
+	background: var(--primary);
+	background-attachment: scroll, fixed;
+	background-color: #666;
+	background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+	background-position: top left, center center;
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+	color: #fff;
 	padding: 3.5em 0 4em 0;
 	text-align: center;
+	/* color: #f9e6df;
+	
+	text-align: center; */
 }
 
 #cta h2,
@@ -4042,9 +4054,17 @@ body.landing #main {
 
 }
 
-.title-center{
+/* OVERRIDE */
+/* OVERRIDE */
+/* OVERRIDE */
+
+.title-center {
 	font-size: 50px;
 	font-weight: bold;
 	text-align: center;
 	padding-bottom: 10px;
+}
+
+body {
+	background-color: rgb(241 245 249) !important;
 }
